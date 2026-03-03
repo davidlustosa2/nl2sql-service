@@ -9,8 +9,8 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from sqlalchemy import create_engine, text
 
-from vanna.openai_chat import OpenAI_Chat
-from vanna.chromadb_vector import ChromaDB_VectorStore
+from vanna.openai.openai_chat import OpenAI_Chat
+from vanna.chromadb.chromadb_vector import ChromaDB_VectorStore
 
 
 class MyVanna(ChromaDB_VectorStore, OpenAI_Chat):
@@ -39,7 +39,7 @@ if OPENAI_MODEL:
 
 vn = MyVanna(config=vn_config)
 
-app = FastAPI(title="NL2SQL Service (Vanna + FastAPI)")
+app = FastAPI(title="NL2SQL Service (Vanna 0.x + FastAPI)")
 
 
 class AskRequest(BaseModel):
