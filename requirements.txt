@@ -1,2 +1,7 @@
 fastapi
 uvicorn[standard]
+pandas
+openpyxl
+SQLAlchemy
+psycopg2-binary
+vanna
