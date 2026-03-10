@@ -99,7 +99,7 @@ def ask(req: AskRequest):
         file_name = "resultado.xlsx"
         mime = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     else:
-        file_bytes = df.to_csv(index=False).encode("utf-8")
+        file_bytes = df.to_csv(index=False).encode("utf-8-sig")
         file_name = "resultado.csv"
         mime = "text/csv"
 
