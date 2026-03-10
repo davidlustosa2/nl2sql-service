@@ -5,4 +5,5 @@ openpyxl
 SQLAlchemy
 psycopg2-binary
 pymysql
+mysql-connector-python
 vanna[openai,chromadb]==0.7.9
