@@ -4,4 +4,5 @@ pandas
 openpyxl
 SQLAlchemy
 psycopg2-binary
+pymysql
 vanna[openai,chromadb]==0.7.9
