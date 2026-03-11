@@ -23,7 +23,7 @@ class MyVanna(ChromaDB_VectorStore, OpenAI_Chat):
 DB_URL = os.environ.get("DB_URL")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL")  # opcional
-MAX_ROWS = int(os.environ.get("MAX_ROWS", "2000"))
+MAX_ROWS = int(os.environ.get("MAX_ROWS", "10000"))
 DEFAULT_FORMAT = os.environ.get("DEFAULT_FORMAT", "csv")
 
 if not DB_URL:
